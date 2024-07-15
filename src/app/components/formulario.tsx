@@ -1,5 +1,3 @@
-// RegisterForm.tsx
-"use client";
 import React, { useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import CustomTextField from './CustomTextField';
@@ -163,7 +161,7 @@ const RegisterForm: React.FC = () => {
             }
           />
 
-          <div className='my-5 flex justify-center w-full'> {/* Add this div to wrap the Button */}
+          <div className='my-5 flex justify-center w-full'> 
                     <Button
                       className="z-50 cursor-pointer uppercase bg-white px-4 py-2 active:translate-x-0.5 active:translate-y-0.5 hover:shadow-[0.5rem_0.5rem_#e9b50b,-0.5rem_-0.5rem_#000505] transition text-black hover:bg-white hover:text-black w-96 mx-10"
                       type="submit"

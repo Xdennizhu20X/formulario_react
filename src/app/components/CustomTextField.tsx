@@ -12,7 +12,7 @@ interface CustomTextFieldProps {
   error?: boolean;
   helperText?: string;
   type?: string;
-  beforeContent: string; // Add this prop
+  beforeContent: string; 
   svgIcon: React.ReactNode; 
 }
 
@@ -25,14 +25,14 @@ const CustomTextField: React.FC<CustomTextFieldProps> = ({
   error,
   helperText,
   type = 'text',
-  beforeContent, // Destructure this prop
-  svgIcon, // Destructure this prop
+  beforeContent, 
+  svgIcon, 
 }) => {
   return (
     <div className="input__container my-10 w-[90%] sm:w-[50%]" data-before-content={beforeContent}>
       <div className="shadow__input"></div>
       <button className="input__button__shadow">
-      {svgIcon} {/* Render the passed SVG icon */}
+      {svgIcon} 
       </button>
       <TextField
         placeholder={placeholder}
